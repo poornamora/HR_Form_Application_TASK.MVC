@@ -1,0 +1,56 @@
+﻿@model IEnumerable<First_Sample_Project.Models.DTO.HRFormDisplayModel>
+
+@{
+    ViewData["Title"] = "List of Details";
+}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="box-title">
+            <b>List of Users</b>
+        </h3>
+    </div>
+
+    <div class="panel-body">
+        <table class="table table-hover table-bordered table-condensed" id="withroles">
+            <thead style="background-color:cadetblue">
+                <td><b>ID</b></td>
+                <td><b>FirstName</b></td>
+                <td><b>LastName</b></td>
+                <td><b>Status</b></td>
+                <td><b>Department</b></td>
+                <td><b>Phone</b></td>
+                <td><b>DateofIncident</b></td>
+                <td><b>TimeofIncident</b></td>
+                <td><b>Countries</b></td>
+                <td><b>Cities</b></td>
+                <td><b>ViewDetails</b></td>
+                <td><b>Update</b></td>
+                <td><b>Delete</b></td>
+                
+            </thead>
+
+            <tbody style="background-color:lightgreen">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
+                        <td>@item.Status</td>
+                        <td>@item.Department</td>
+                        <td>@item.Phone</td>
+                        <td>@item.DateofIncident</td>
+                        <td>@item.TimeofIncident</td>
+                        <td>@item.CountryName</td>
+                        <td>@item.CityName</td> 
+                        
+                        <td>@Html.ActionLink("ViewDetails", "GetFormViewDetails","HRForm", new { id = item.Id }, new { mode = "view" })</td>
+                        <td>@Html.ActionLink("Update", "GetHRFormUpdate", "HRForm", new { id = item.Id }, new { mode = "Update" })</td>
+                        <td>@Html.ActionLink("Delete", "DeleteFormDetails","HRForm", new { id = item.Id })</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,540 @@
+//$(document).ready(function () {
+
+//    $("#user-form").validate({
+//        rules: {
+//            name: 'required',
+//            email: {
+//                required: true,
+//                email: true,
+//            },
+//            password: {
+//                required: true,
+//                minlength: 6
+//            },
+//            password2:
+//            {
+//                required: true,
+//                minlength: 6,
+//                equalTo: "#id-password"
+//            }
+//        },
+//        messages: {
+//            name: 'Enter Your Name',
+//            email: {
+//                required: 'Please Enter your Email Address',
+//                email: "Please enter an <em>valid</em> email address"
+//            },
+//            password: {
+//                required: 'Please Enter password',
+//                minlength: "Password must be atleast 6 characters"
+//            },
+//            password2:
+//            {
+//                required: 'please Enter conform Password',
+//                minlength: "Password must be atleast 6 characters",
+//                equalTo: "Please provide same password as above"
+//            }
+//        },
+//        submitHandler: function (form) {
+//            form.submit();
+//        }
+//    });
+//});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form asp-controller="Account" asp-action="Register" id="form">
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" placeholder="Enter Name" class="form-control" id="name"/>
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" placeholder="Enter valid Email" class="form-control" id="email"/>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password" class="control-label"></label>
+        <input asp-for="Password" placeholder="Enter Password" class="form-control" id="password"/>
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ConformPassword" class="form-cotrol"></label>
+        <input asp-for="ConformPassword" placeholder="Enter Conform Password" class="form-control" id="conformpassword"/>
+        <span asp-validation-for="ConformPassword" class="text-danger"></span>
+    </div>
+
+   
+    <div class="form-group">
+        <input type="submit" value="save" class="btn btn-primary" id="btn-submit" onclick="submitfunction()"/>
+    </div>
+
+    <div class="form-group">
+        <p>@ViewBag.Message</p>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+
+
+    var emailregex = /^[a-z0-9]+@gmail.com$/;
+    $("#id-email").on("input", function () {
+        var email_val = $("#id-email").val();
+
+        console.log(email_val);
+        
+
+        if (!emailregex.test(email_val)) {
+            $("#error").text('Please Enter valid Email').show();
+            $("#emailicon").html('<i class="bi bi-exclamation-circle text-danger"></i>').show();
+            isvalid = false;
+            return false;
+        }
+        else {
+            $("#error").hide();
+            isvalid = true;
+            return true;
+        }
+    });
+
+    $("#password-id").on("input", function () {
+        var password_val = $("#password-id").val();
+        console.log(password_val);
+       
+        //if (password_val == '') {
+        //    $("#error1").text('Please Enter password').show();
+        //    $("#passwordicon").html('<i class="bi bi-exclamation-circle text-danger"></i>').show();
+        //    isvalid = false;
+        //    return false;
+        //}
+        //else {
+        //    $("#error1").hide();
+        //    isvalid = true;
+        //    return true;
+        //}
+
+    }); 
+
+    
+
+    //Click Function and submit form logic 
+    $("#id-submit").click(function (e) {
+        e.preventDefault();
+
+        var isvalid = true;
+
+        var email_val = $("#id-email").val();
+        var password_val = $("#password-id").val();
+
+
+        console.log(password_val);
+
+        
+        if (password_val == '') {
+            $("#error1").text('Please Enter password').show();
+            $("#passwordicon").html('<i class="bi bi-exclamation-circle text-danger"></i>').show();
+            isvalid = false;
+            return false;
+        }
+
+        if (email_val == '') {
+
+            $("#error").text('Please Enter Email').show();
+            $("#emailicon").html('<i class="bi bi-exclamation-circle text-danger"></i>').show();
+            isvalid = false;
+            return false;
+        }
+
+        if (isvalid) {
+            $("#Loginform")[0].submit();
+        }
+
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $(document).ready(function () {
+//     $("#form").submit(function (e)
+//     {
+//         e.preventDefault();
+
+//         if ($("#form").valid())
+//         {
+//             alert("Registered successfully");
+//         }
+//     });
+//});
+
+
+//function submitfunction() {
+
+//    var namedata = document.querySelector("#name").value;
+//    var emaildata = document.querySelector("#email").value;
+//    var passworddata = document.querySelector("#password").value;
+//    console.log(namedata);
+//    console.log(emaildata);
+//    console.log(passworddata);
+//    var conformpassworddata = document.getElementById("conformpassword").value;
+//    if (validation()) {
+//        var x = document.getElementsByTagName("form").submit
+
+//        alert('Name' + namedata + "Email" + emaildata + "Password" + passworddata + "ConformPassword" + conformpassworddata + " FOrm Submited sucessfully:");
+//    }
+//}
+
+//function validation() {
+//    var namedata = document.querySelector("#name").value;
+//    var emaildata = document.querySelector("#email").value;
+
+//    var passdata = document.querySelector("#password").value;
+//    var cpassdata = document.querySelector("#conformpassword").value;
+
+//    if (namedata === '' && emaildata === '' && passdata === '' && cpassdata === '') {
+//        alert("Please fill all the fields");
+//        return false;
+//    }
+//    else if (passdata !== passdata) {
+//        alert('Password and conform does not match');
+//        return false;
+//    }
+//    else return true;
+//}
+
+
+
+
+
+
+//$(document).ready(function () {
+//    $('#btn-register').click(function (e) {
+//        e.preventDefault(); // Prevent form submission
+
+//        // Reset error messages
+//        $('.error').text('');
+
+//        // Perform validations
+//        var isvalid = true;
+
+//        // Name validation
+//        var name_err = name_check();
+//        if (!name_err) {
+//            isvalid = false;
+//        }
+
+//        // Email validation
+//        var email_err = email_check();
+//        if (!email_err) {
+//            isvalid = false;
+//        }
+
+//        // Password validation
+//        var password_err = password_checkup();
+//        if (!password_err) {
+//            isvalid = false;
+//        }
+
+//        // Confirm Password validation
+//        var confirmpassword_err = confirmpassword_checkup();
+//        if (!confirmpassword_err) {
+//            isvalid = false;
+//        }
+
+//        // If form is valid, submit it
+//        if (isvalid) {
+//            $('#user-form')[0].submit();
+//        }
+//    });
+
+//    function name_check() {
+//        var regex_name = /^[a-zA-Z\s]+$/;
+//        var name_val = $("#id-name").val();
+//        console.log(name_val);
+//        if (name_val == '') {
+//            $("#error1").show();
+//            $("#error1").html('Please Enter the Name');
+//            $("#icondisplay").html('<i class="bi bi-exclamation-circle"></i>');
+//            return false;
+//        } else if (!regex_name.test(name_val)) {
+//            $("#error1").show();
+//            $("#error1").html('Please Enter alphabetic characters only ');
+//            return false;
+//        } else {
+//            $("#error1").hide();
+//            return true;
+//        }
+//    }
+
+//    function email_check() {
+//        var emailpattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+//        var email_val = $("#id-email").val();
+//        console.log(email_val);
+//        if (email_val == '') {
+//            $("#error2").show();
+//            $("#error2").html('Please enter Email');
+//            return false;
+//        } else if (!emailpattern.test(email_val)) {
+//            $('#error2').show();
+//            $('#error2').html('Please Enter valid Email');
+//            return false;
+//        } else {
+//            $('#error2').hide();
+//            return true;
+//        }
+//    }
+
+//    function password_checkup() {
+//        var password_val = $('#id-password').val();
+//        console.log(password_val);
+//        if (password_val == '') {
+//            $('#error3').html('Please Enter Password');
+//            return false;
+//        }
+//        if (password_val.length < 6) {
+//            $('#error3').html(' Please enter Password atleast 6 characters');
+//            return false;
+//        } else {
+//            $('#error3').hide();
+//            return true;
+//        }
+//    }
+
+//    function confirmpassword_checkup() {
+//        var password_val = $('#id-password').val();
+//        var confirmpassword_val = $('#id-cpassword').val();
+//        console.log(password_val);
+//        if (password_val == '') {
+//            $('#error4').html('Please Enter confirm Password');
+//            return false;
+//        }
+//        if (password_val != confirmpassword_val) {
+//            $('#error4').html('sorry! mismatch of password and confirm Password');
+//            return false;
+//        } else {
+//            $('#error4').hide();
+//            return true;
+//        }
+//    }
+//});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+    // Attach keyup event handlers for input fields
+    $('#id-name').keyup(name_check);
+    $('#id-email').keyup(email_check);
+    $('#id-password').keyup(password_checkup);
+    $('#id-cpassword').keyup(confirmpassword_checkup);
+
+    // Attach click event handler for the Register button
+    $('#btn-register').click(function (e) {
+        e.preventDefault(); // Prevent form submission
+
+        // Reset error messages
+        $('.error').text('');
+
+        // Perform validations
+        var isvalid = true;
+
+        // Name validation
+        var name_err = name_check();
+        if (!name_err) {
+            isvalid = false;
+        }
+
+        // Email validation
+        var email_err = email_check();
+        if (!email_err) {
+            isvalid = false;
+        }
+
+        // Password validation
+        var password_err = password_checkup();
+        if (!password_err) {
+            isvalid = false;
+        }
+
+        // Confirm Password validation
+        var confirmpassword_err = confirmpassword_checkup();
+        if (!confirmpassword_err) {
+            isvalid = false;
+        }
+
+        // If form is valid, submit it
+        if (isvalid) {
+            $('#user-form')[0].submit();
+        }
+    });
+
+    function name_check() {
+        var regex_name = /^[a-zA-Z\s]+$/;
+        var name_val = $("#id-name").val();
+        console.log(name_val);
+        if (name_val == '') {
+            $("#error1").show();
+            $("#error1").html('Please Enter the Name');
+            $("#icondisplay").html('<i class="bi bi - exclamation - circle"></i>');
+            return false;
+        } else if (!regex_name.test(name_val)) {
+            $("#error1").show();
+            $("#error1").html('Please Enter alphabetic characters only ');
+            return false;
+        } else {
+            $("#error1").hide();
+            return true;
+        }
+    }
+
+    function email_check() {
+        var emailpattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+        var email_val = $("#id-email").val();
+        console.log(email_val);
+        if (email_val == '') {
+            $("#error2").show();
+            $("#error2").html('Please enter Email');
+            return false;
+        } else if (!emailpattern.test(email_val)) {
+            $('#error2').show();
+            $('#error2').html('Please Enter valid Email');
+            return false;
+        } else {
+            $('#error2').hide();
+            return true;
+        }
+    }
+
+    function password_checkup() {
+        var password_val = $('#id-password').val();
+        console.log(password_val);
+        if (password_val == '') {
+            $('#error3').html('Please Enter Password');
+            return false;
+        }
+        if (password_val.length < 6) {
+            $('#error3').html(' Please enter Password atleast 6 characters');
+            return false;
+        } else {
+            $('#error3').hide();
+            return true;
+        }
+    }
+
+    function confirmpassword_checkup() {
+        var password_val = $('#id-password').val();
+        var confirmpassword_val = $('#id-cpassword').val();
+        console.log(password_val);
+        if (password_val == '') {
+            $('#error4').html('Please Enter confirm Password');
+            return false;
+        }
+        if (password_val != confirmpassword_val) {
+            $('#error4').html('sorry! mismatch of password and confirm Password');
+            return false;
+        } else {
+            $('#error4').hide();
+            return true;
+        }
+    }
+});

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<First_Sample_Project.Models.UserRegistration>
+
+@{
+    ViewData["Title"] = "List of Employees";
+}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="box-title">
+            <b>List of Users</b>
+        </h3>
+    </div>
+
+    <div class="panel-body">
+        <table class="table table-hover table-bordered table-condensed" id="withroles">
+            <thead style="background-color:burlywood">
+                <td><b>ID</b></td>
+                <td><b>Name</b></td>
+                <td><b>Email</b></td>
+                <td><b>Password</b></td>
+                <td><b>ViewDetails</b></td>
+                @* <td><b>JsonData</b></td> *@
+                <td><b>Update</b></td>
+                <td><b>Delete</b></td>
+            </thead>
+
+            <tbody style="background-color:aquamarine">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Email</td>
+                        <td>@item.Password</td>
+                        <td>@Html.ActionLink("ViewDetails", "UserDetails", new { id = item.Id })</td>
+                        @* <td>@Html.ActionLink("JsonData", "JsonDataAction", new { id = item.Id })</td> *@
+                        <td>@Html.ActionLink("Update", "UpdateUser", new { id = item.Id })</td>
+                        <td>@Html.ActionLink("Delete", "DeleteUser", new { id = item.Id })</td>
+                        
+                    </tr>
+                }
+            </tbody>
+        </table>
+        </div>
+</div>

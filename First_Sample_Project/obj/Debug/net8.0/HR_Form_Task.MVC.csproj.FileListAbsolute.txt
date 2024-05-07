@@ -1,0 +1,40 @@
+C:\CodeRepositories\Debug\net8.0\NLog.config
+C:\CodeRepositories\Debug\net8.0\appsettings.Development.json
+C:\CodeRepositories\Debug\net8.0\appsettings.json
+C:\CodeRepositories\Debug\net8.0\bin\Debug\net8.0\appsettings.Development.json
+C:\CodeRepositories\Debug\net8.0\bin\Debug\net8.0\appsettings.json
+C:\CodeRepositories\Debug\net8.0\bin\Debug\net8.0\First_Sample_Project.deps.json
+C:\CodeRepositories\Debug\net8.0\bin\Debug\net8.0\First_Sample_Project.runtimeconfig.json
+C:\CodeRepositories\Debug\net8.0\bin\Debug\net8.0\First_Sample_Project.staticwebassets.runtime.json
+C:\CodeRepositories\Debug\net8.0\bin\Debug\net8.0\libman.json
+C:\CodeRepositories\Debug\net8.0\libman.json
+C:\CodeRepositories\Debug\net8.0\HR_Form_Task.MVC.staticwebassets.runtime.json
+C:\CodeRepositories\Debug\net8.0\HR_Form_Task.MVC.exe
+C:\CodeRepositories\Debug\net8.0\HR_Form_Task.MVC.deps.json
+C:\CodeRepositories\Debug\net8.0\HR_Form_Task.MVC.runtimeconfig.json
+C:\CodeRepositories\Debug\net8.0\HR_Form_Task.MVC.dll
+C:\CodeRepositories\Debug\net8.0\HR_Form_Task.MVC.pdb
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.csproj.AssemblyReference.cache
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.AssemblyInfoInputs.cache
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.AssemblyInfo.cs
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.csproj.CoreCompileInputs.cache
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.RazorAssemblyInfo.cache
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.RazorAssemblyInfo.cs
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\staticwebassets\msbuild.HR_Form_Task.MVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\staticwebassets\msbuild.build.HR_Form_Task.MVC.props
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.HR_Form_Task.MVC.props
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.HR_Form_Task.MVC.props
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\scopedcss\bundle\HR_Form_Task.MVC.styles.css
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\scopedcss\projectbundle\HR_Form_Task.MVC.bundle.scp.css
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_.DDCAC8B2.Up2Date
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.dll
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\refint\HR_Form_Task.MVC.dll
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.pdb
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\HR_Form_Task.MVC.genruntimeconfig.cache
+C:\Users\Poornachandra.M\Desktop\First_Sample_Project - Copy\First_Sample_Project\obj\Debug\net8.0\ref\HR_Form_Task.MVC.dll

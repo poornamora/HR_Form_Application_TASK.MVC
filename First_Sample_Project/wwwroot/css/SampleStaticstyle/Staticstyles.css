@@ -1,0 +1,294 @@
+﻿body{
+
+}
+
+.header {
+    display:flex;
+    justify-content:space-between;
+
+    align-items:center;
+    overflow: hidden;
+    background-color: white;
+    padding: 15px;
+}
+
+
+.iconid {
+    position: absolute;
+    left: 250px;
+}
+
+#address-div-id
+{
+    position:absolute;
+
+}
+
+#h3-headingid {
+    position: absolute;
+    left: 300px;
+    top: 3px;
+}
+
+#contactdetails-id {
+    position: absolute;
+    font-size: 15px;
+    top: -1px;
+    /*right: 20px;*/
+    /*left: 20px;*/
+    right: 206px;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 8px;
+    border-radius: 4px;
+}
+
+.header img{
+
+    max-width:100%;
+    width:60px;
+    height:60px;
+    left:230px;
+}
+
+img {
+    position: absolute;
+    left: 143px;
+    top: 10px;
+}
+
+.heading-right h1 {
+    position: absolute;
+    right: 900px;
+    bottom: 251px;
+
+    margin-left: 10px;
+
+
+}
+
+
+.header-left a {
+    margin-left:10px;
+    color:#fff;
+    text-decoration:none;
+}
+.body-img-container
+{
+    background-color:black;
+    width:100%;
+    height:100%;
+}
+
+
+
+.header-left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-left li {
+    display: inline-block;
+    margin-right:10px;
+}
+
+.header-left a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.header-left a:hover{
+    text-decoration:underline;
+}
+
+
+.body-img-container{
+    text-align:center;
+    margin-top:20px;
+}
+
+
+.body-img img{
+    max-width:100%;
+    height:auto;
+
+}
+
+#bodyimg-id {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 350px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#backgroundimg-id
+{
+    object-fit:cover;
+}
+
+
+.backgroundimg-id {
+    position: absolute;
+    top: 180px;
+    /*bottom:100px;*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+#backgroundimg-id {
+    width: 100%;
+    height: 387px;
+    position: absolute;
+    top: 151px;
+}
+
+#Tea-month{
+    margin-top: 450px;
+    margin-left: 20%;
+}
+
+#paragragh
+{
+    margin-right:20%;
+}
+
+#submitbtn {
+    background-color: greenyellow;
+}
+
+#Best-tea {
+    margin-left: 40%;
+    margin-top: -21%;
+    margin-right: 20%;
+}
+
+#teaset-img-id {
+    position: absolute;
+    width:180px;
+    top: 800px;
+    left:630px;
+}
+
+#teavarities-img-id
+{
+    position:absolute;
+    width:180px;
+    top:800px;
+    left:830px;
+}
+
+
+#teatesting-img-id {
+    position: absolute;
+    width:180px;
+    left: 1030px;
+    top: 800px;
+}
+
+
+#h3-tea-varities {
+    position: absolute;
+    left: 830px;
+    bottom: -43px;
+}
+
+#h3-tea-testing {
+    position: absolute;
+    left: 1028px;
+    bottom: -43px;
+}
+
+#h3-tea-sets{
+    position: absolute;
+    bottom: -43px;
+}
+
+#header-left{
+    margin-top:-15px;  
+}
+
+
+
+#img-information {
+
+    position: absolute;
+    bottom: -224px;
+}
+
+#img1-information {
+    position:absolute;
+    left: 841px;
+    bottom: -219px;
+}
+
+#img2-information {
+    position: absolute;
+    left: 1040px;
+    bottom: -216px;
+}
+
+#last-cup {
+    width: 170px;
+    position: absolute;
+    top: 1000px;
+    left: 333px;
+    height:110px;
+}
+
+#last-map {
+    width:400px;
+    position: absolute;
+    top: 1000px;
+    left: 841px;
+}
+
+.Address-container {
+    position: absolute;
+    top: 990px;
+    left: 630px;
+}
+
+.heading-last-img {
+    position: absolute;
+    top: 949px;
+    left: 333px;
+}
+
+.required
+{
+    color:red;
+}
+
+
+
+#li-About {
+    position: absolute;
+    left: 150px;
+    top: 134px;
+}
+
+#li-Home {
+    position: absolute;
+    top: 134px;
+    left: 60px;
+}
+
+#li-Contact {
+    position:absolute;
+    top: 134px;
+    left: 250px;
+}

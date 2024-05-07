@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\HR_Form_Task.MVC.csproj|c:\\users\\poornachandra.m\\desktop\\first_sample_project - copy\\first_sample_project\\wwwroot\\css\\validationsstyles\\stylelogin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\HR_Form_Task.MVC.csproj|solutionrelative:first_sample_project\\wwwroot\\css\\validationsstyles\\stylelogin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|c:\\users\\poornachandra.m\\desktop\\first_sample_project - copy\\first_sample_project\\views\\formdetailsctrl\\formbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|solutionrelative:first_sample_project\\views\\formdetailsctrl\\formbooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|c:\\users\\poornachandra.m\\desktop\\first_sample_project - copy\\first_sample_project\\controllers\\formdetailsctrlcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|solutionrelative:first_sample_project\\controllers\\formdetailsctrlcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|c:\\users\\poornachandra.m\\desktop\\first_sample_project - copy\\first_sample_project\\views\\formdetailsctrl\\listpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|solutionrelative:first_sample_project\\views\\formdetailsctrl\\listpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|c:\\users\\poornachandra.m\\desktop\\first_sample_project - copy\\first_sample_project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|solutionrelative:first_sample_project\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|c:\\users\\poornachandra.m\\desktop\\first_sample_project - copy\\first_sample_project\\wwwroot\\js\\registrationvalidations\\formvalidations.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|solutionrelative:first_sample_project\\wwwroot\\js\\registrationvalidations\\formvalidations.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|c:\\users\\poornachandra.m\\desktop\\first_sample_project - copy\\first_sample_project\\views\\shared\\_partial_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|solutionrelative:first_sample_project\\views\\shared\\_partial_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|c:\\users\\poornachandra.m\\desktop\\first_sample_project - copy\\first_sample_project\\wwwroot\\css\\validationsstyles\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|solutionrelative:first_sample_project\\wwwroot\\css\\validationsstyles\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|c:\\users\\poornachandra.m\\desktop\\first_sample_project - copy\\first_sample_project\\wwwroot\\css\\hrformstyles\\hrform.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2E673D3D-5BF7-4FB5-98D0-346EFC864117}|First_Sample_Project\\First_Sample_Project.csproj|solutionrelative:first_sample_project\\wwwroot\\css\\hrformstyles\\hrform.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StyleLogin.css",
+              "DocumentMoniker": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\wwwroot\\css\\ValidationsStyles\\StyleLogin.css",
+              "RelativeDocumentMoniker": "First_Sample_Project\\wwwroot\\css\\ValidationsStyles\\StyleLogin.css",
+              "ToolTip": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\wwwroot\\css\\ValidationsStyles\\StyleLogin.css",
+              "RelativeToolTip": "First_Sample_Project\\wwwroot\\css\\ValidationsStyles\\StyleLogin.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-07T06:14:55.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormBooking.cshtml",
+              "DocumentMoniker": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\Views\\FormDetailsCtrl\\FormBooking.cshtml",
+              "RelativeDocumentMoniker": "First_Sample_Project\\Views\\FormDetailsCtrl\\FormBooking.cshtml",
+              "ToolTip": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\Views\\FormDetailsCtrl\\FormBooking.cshtml",
+              "RelativeToolTip": "First_Sample_Project\\Views\\FormDetailsCtrl\\FormBooking.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAIsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T11:48:10.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\Views\\FormDetailsCtrl\\ListPage.cshtml",
+              "RelativeDocumentMoniker": "First_Sample_Project\\Views\\FormDetailsCtrl\\ListPage.cshtml",
+              "ToolTip": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\Views\\FormDetailsCtrl\\ListPage.cshtml",
+              "RelativeToolTip": "First_Sample_Project\\Views\\FormDetailsCtrl\\ListPage.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAIBJwCQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T11:47:53.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormDetailsCtrlController.cs",
+              "DocumentMoniker": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\Controllers\\FormDetailsCtrlController.cs",
+              "RelativeDocumentMoniker": "First_Sample_Project\\Controllers\\FormDetailsCtrlController.cs",
+              "ToolTip": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\Controllers\\FormDetailsCtrlController.cs",
+              "RelativeToolTip": "First_Sample_Project\\Controllers\\FormDetailsCtrlController.cs",
+              "ViewState": "AQIAAG0AAABAzMzMzMwowHEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T11:47:00.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Partial_Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\Views\\Shared\\_Partial_Header.cshtml",
+              "RelativeDocumentMoniker": "First_Sample_Project\\Views\\Shared\\_Partial_Header.cshtml",
+              "ToolTip": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\Views\\Shared\\_Partial_Header.cshtml",
+              "RelativeToolTip": "First_Sample_Project\\Views\\Shared\\_Partial_Header.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T05:35:37.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "formvalidations.js",
+              "DocumentMoniker": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\wwwroot\\js\\Registrationvalidations\\formvalidations.js",
+              "RelativeDocumentMoniker": "First_Sample_Project\\wwwroot\\js\\Registrationvalidations\\formvalidations.js",
+              "ToolTip": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\wwwroot\\js\\Registrationvalidations\\formvalidations.js",
+              "RelativeToolTip": "First_Sample_Project\\wwwroot\\js\\Registrationvalidations\\formvalidations.js",
+              "ViewState": "AQIAAIABAAAAlJmZmZkdwLsBAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-30T09:38:06.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "First_Sample_Project\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "First_Sample_Project\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAkAAAAAMzMzMzMnwBsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T11:41:05.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\wwwroot\\css\\ValidationsStyles\\styles.css",
+              "RelativeDocumentMoniker": "First_Sample_Project\\wwwroot\\css\\ValidationsStyles\\styles.css",
+              "ToolTip": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\wwwroot\\css\\ValidationsStyles\\styles.css",
+              "RelativeToolTip": "First_Sample_Project\\wwwroot\\css\\ValidationsStyles\\styles.css",
+              "ViewState": "AQIAAAkAAAAAAAAAAIBJwCIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-28T11:27:18.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Hrform.css",
+              "DocumentMoniker": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\wwwroot\\css\\HrFormStyles\\Hrform.css",
+              "RelativeDocumentMoniker": "First_Sample_Project\\wwwroot\\css\\HrFormStyles\\Hrform.css",
+              "ToolTip": "C:\\Users\\Poornachandra.M\\Desktop\\First_Sample_Project - Copy\\First_Sample_Project\\wwwroot\\css\\HrFormStyles\\Hrform.css",
+              "RelativeToolTip": "First_Sample_Project\\wwwroot\\css\\HrFormStyles\\Hrform.css",
+              "ViewState": "AQIAAE0AAAAAAAAAAADwv2EAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-25T04:27:00.406Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

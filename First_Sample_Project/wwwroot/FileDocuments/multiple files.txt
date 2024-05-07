@@ -1,0 +1,91 @@
+$(document).ready(function () {
+    $("#btn-upload").click(function () {
+
+        /*e.preventDefault();*/
+        var isvalid = true;
+
+        let fileInput = $("#fileinput")[0];
+        if (fileInput.files.length === 0) {
+            $("#error").text("Please select any file").show();
+            $("#icon").html('<i class="fas  fa-exclamation-circle"></i>').show();
+            isvalid = false;
+            return false;
+        }
+
+        if (isvalid) {
+            let formData = new FormData();
+
+            let files = fileInput.files; 
+
+            
+            for (let i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+            }
+
+
+            //let file = fileInput.files[0];
+            //formData.append('file', file);
+
+
+            $.ajax({
+                url: 'Data/GetFiles',
+                type: 'GET',
+                dataType: 'json',
+                success: function (response) {
+                    if (data.Exists) {
+                        alert('File already exists ')
+                    }
+                    else
+                    {
+                        $.ajax({
+                            url: "Data/FileUpload",
+                            type: 'POST',
+                            data: formData,
+                            processData: false,
+                            contentType: false,
+                            success: function (data) {
+                                if (data.Exists) {
+
+                                    alert('File already exists Do you want to override it ?')
+                                    window.location.href = 'Purple/Files/FileUploading';
+
+                                }
+                                else
+                                {
+                                    functionUpload(data);
+                                }
+                            },
+                            error: function () {
+                                alert('An error occurred during the file checking');
+                            }
+                        });
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error', error);
+                }
+            });
+        }
+    });
+
+    function functionUpload(formData) {
+        $.ajax({
+            url: "Data/FileUpload",
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (uploadeddata) {
+                if (uploadeddata.Exists) {
+                    window.location.href = 'Purple/Files/FileUploading';
+
+                } else {
+                    alert('File uploaded error');
+                }
+            },
+            error: function () {
+                alert('An error occurred during the file upload');
+            }
+        });
+    }
+});

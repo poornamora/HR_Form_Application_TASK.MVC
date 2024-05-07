@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HR_Form_Task.MVC.props" />
+</Project>

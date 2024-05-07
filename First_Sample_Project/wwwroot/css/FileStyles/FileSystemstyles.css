@@ -1,0 +1,70 @@
+﻿body {
+}
+
+#error
+{
+    color:red;
+}
+
+
+
+#icon {
+    color: red;
+}
+
+.container {
+    border: 3px solid #ccc;
+    align-content: center;
+}
+
+.heading {
+    color:blue;
+    /*background-color:blue;*/
+    align-content:center;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pop-content{
+    align-content:center;
+}
+
+.popup-content p{
+    margin-bottom:15px;
+}
+
+.pop-content button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.fa-exclamation-circle {
+    position: absolute;
+    left: 234px;
+    top: 86px;
+}
+
+#invalidfileformat{
+    color:red;
+}

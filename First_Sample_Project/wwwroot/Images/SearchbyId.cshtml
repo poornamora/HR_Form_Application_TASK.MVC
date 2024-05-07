@@ -1,0 +1,28 @@
+﻿
+<div>
+    <label for="name">Id</label><br />
+    <input type="text" name="search" class="form-control" id="nameinput" />
+    <a asp-controller="Home" asp-action="SearchbyId" asp-route-id="" class="btn btn-primary" id="searchbtn">Search</a>
+</div>
+
+
+
+
+@section Scripts {
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#searchbtn').on('click', function (e) {
+                e.preventDefault();
+                var id = $('#nameinput').val();
+                if (id) {
+                    var url = $(this).attr('href') + '?id=' + id;
+                    window.location.href = url;
+                } else {
+                    alert("Please enter an ID.");
+                }
+            });
+        }
+    </script>
+}

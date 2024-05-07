@@ -1,0 +1,297 @@
+﻿@model First_Sample_Project.Models.UserRegistration
+
+@{
+    Layout = null;
+}
+
+@if(ViewBag.Mode=="view")
+{
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+
+            <!-- Include jQuery from the CDN with correct integrity attribute -->
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+            <!-- Include jQuery Validation plugin -->
+            <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+            <link href="~/css/ValidationsStyles/styles.css" rel="stylesheet" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+            <link href="~/css/ValidationsStyles/styles.css" rel="stylesheet" />
+
+
+        </head>
+
+        <body>
+            <div class="container mt-4"> 
+                <div class="row justify-content-center">
+                <div class="col-md-4">
+                
+                    <div class="registration-container">
+
+                        <h1 id="headref" class="text-center mt-5">Registration Form</h1>
+                        <br/>
+                        @* <form  id="user-form" method="post"> *@
+                            <div id="Registration-form" method="post">
+                            <div class="container">
+                                <div class="mb-3">
+                                    <label for="name" class="control-label"><b>Name</b></label>
+                                    <input type="text" name="name" placeholder="Enter Name" id="id-name" value="@Model?.Name"  class="form-control" required disabled="disabled" />
+                                    <span id="icondisplay" class="text-danger"></span>
+                                    <br />
+                                    <span id="error1" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="control-label"><b>Email</b></label>
+                                    <input type="email" name="email" placeholder="Enter EmailID" id="id-email" value="@Model?.Email" class="form-control" required disabled="disabled"/>
+                                    <span id="icondisplay1" class="text-danger"></span>
+                                    <br />
+                                    <span id="error2" class="text-danger"></span>
+                                </div>
+                                <br />
+
+                                <div class="mb-3">
+                                    <label for="password" class="control-label"><b>Password</b></label>
+                                    <input type="password" name="password" placeholder="Enter Password" id="id-password" value="@Model?.Password" class="form-control" required disabled="disabled" />
+                                    <span id="icondisplay2" class="text-danger"></span>
+                                    <br />
+                                    <span id="error3" class="text-danger"></span>
+                                </div>
+                                <br />
+
+                          
+                            
+                            </div>
+                        @* </form> *@
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </body>
+    </html>
+
+}
+
+
+
+
+
+@if (ViewBag.Mode=="update" ||ViewBag.Mode=="submit")
+{
+    <!DOCTYPE html>
+    <head>
+    <title></title>
+
+    <!-- Include jQuery from the CDN with correct integrity attribute -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Include jQuery Validation plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <link href="~/css/ValidationsStyles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link href="~/css/ValidationsStyles/styles.css" rel="stylesheet"/>
+    
+
+    </head>
+    @*  <div class="container mt-4"> *@
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+    
+                <div class="registration-container">
+
+                    <h1 id="headref" class="text-center mt-5">Registration Form</h1>
+                    <br/>
+                    @* <form  id="user-form" method="post"> *@
+                        <div id="Registration-form" method="post">
+                        <div class="container">
+
+                            <input type="hidden" id="userid" value="@Model?.Id"/>
+
+                            <div class="mb-3">
+                                <label for="name" class="control-label"><b>Name</b></label>
+                                <input type="text" name="name" placeholder="Enter Name" id="id-name" value="@Model?.Name"  class="form-control" required/>
+                                <span id="icondisplay" class="text-danger"></span>
+                                <br />
+                                <span id="error1" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="control-label"><b>Email</b></label>
+                                <input type="email" name="email" placeholder="Enter EmailID" id="id-email" value="@Model?.Email" class="form-control" required/>
+                                <span id="icondisplay1" class="text-danger"></span>
+                                <br />
+                                <span id="error2" class="text-danger"></span>
+                            </div>
+                            <br />
+
+                            <div class="mb-3">
+                                <label for="password" class="control-label"><b>Password</b></label>
+                                <input type="password" name="password" placeholder="Enter Password" id="id-password" value="@Model?.Password" class="form-control" required />
+                                <span id="icondisplay2" class="text-danger"></span>
+                                <br />
+                                <span id="error3" class="text-danger"></span>
+                            </div>
+                            <br />
+
+                            @if(Model!=null && Model?.ConformPassword == null)
+                            {
+    
+                            }
+                            else
+                            {
+                                <div class="mb-3">
+                                    <label for="password2" class="control-label"><b>Confirm Password</b></label>
+                                    <input type="password" name="ConformPassword" placeholder="Enter Confirm Password" value="@Model?.ConformPassword" id="id-cpassword" class="form-control" required />
+                                    <span id="icondisplay3" class="text-danger" ></span>
+                                    <br />
+                                    <span id="error4" class="text-danger"></span> 
+                                </div>
+                            } 
+                            <br />
+
+                            <input type="hidden" name="mode" id="mode" value="@ViewBag.Mode"/>
+
+                            @if (ViewBag.Mode=="submit")
+                            {
+                                @* <input type="button" value="Register" id="btn-register" class="btn btn-primary" /> *@
+                                <button type="button" id="btn-register" class="btn btn-primary"><b>Register</b></button>
+                            }
+                            else
+                            {
+                                <input type="button" value="Update" id="btn-register" class="btn btn-primary" />
+                            }
+                            <div class="form-group">
+                                <p>@ViewBag.Message</p>
+                            </div>
+                        </div>
+                    @* </form> *@
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        @* </div> *@
+  
+    <script src="~/js/Registrationvalidations/formvalidations.js"></script>
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* @model First_Sample_Project.Models.UserRegistration
+
+<div style="color:cornflowerblue">
+    <h1>User Registration Form </h1>
+</div>
+
+
+
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <!-- Include jQuery from the CDN with correct integrity attribute -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Include jQuery Validation plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <link href="~/css/ValidationsStyles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="col-md-6">
+
+                    <form asp-action="Register" asp-controller="Account" id="user-form">
+                        <div class="container">
+                            <div class="form-group>
+                                <label for="name" class="control-label>Name</label>
+                                <input type="text" name="name" placeholder="Enter Name" id="id-name" />
+                                <span id="icondisplay" class="text-danger"></span>
+                                <br />
+                                <span id="error1" class="text-danger"></span>
+                             <div>
+                                    <br />
+
+                             <div class="form-group>
+                                    <label for="email" class="control-label>Email</label>
+                                    <input type="email" name="email" placeholder="Enter EmailID" id="id-email" class="form-control" />
+                                    <br />
+                                    <span id="error2" class="text-danger"></span>
+                             </div>
+                                    <br />
+
+                             <div class="form-group>
+                                    <label for="password" class="control-label>Password</label>
+                                    <input type="password" name="password" placeholder="Enter Password" id="id-password" class="form-control" />
+                                    <br />
+                                    <span id="error3"></span>
+                             </div>
+                            <br />
+
+                             <div class="form-group>
+                                    <label for="password2" class="control-label>Confirm Password</label>
+                                    <input type="password" name="password2" placeholder="Enter Confirm Password" id="id-cpassword" class="form-control" />
+                                    <br />
+                                    <span id="error4"></span>
+                             </div>
+                                    <br />
+
+                             <input type="submit" value="Register" id="btn-register" class="btn btn-primary" />
+
+
+                            <div class="form-group">
+                                <p>@ViewBag.Message</p>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/formvalidations.js"></script>
+</body>
+</html>
+ *@
+
+
+
+
+

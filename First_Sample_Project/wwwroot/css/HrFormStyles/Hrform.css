@@ -1,0 +1,113 @@
+﻿
+.Heading {
+    text-align:center;
+    color:black;
+}
+
+
+.testbox {
+    width: 80%;
+    margin: auto;
+    background-color:cornflowerblue;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Style individual form items */
+.item {
+    margin-bottom: 20px;
+}
+
+    /* Style labels */
+    .item p {
+        font-size: 16px;
+        margin: 0 0 5px 0;
+    }
+
+    /* Style input fields */
+    .item input[type="text"],
+    .item input[type="date"],
+    .item input[type="time"],
+    .item textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+
+.status-item label {
+    margin-right: 15px;
+}
+
+/* Style buttons */
+.btn-block {
+    text-align: center;
+}
+
+    .btn-block input[type="submit"] {
+        width: auto;
+        padding: 10px 20px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+
+.material-icons {
+    vertical-align: middle;
+}
+
+
+#error {
+    color: red;
+    font-size: 12px;
+}
+
+#icon {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.Iconcolor {
+    color: #007bff;
+}
+
+
+#inputfirstname {
+    width: 100%;
+    margin-right: 10px;
+}
+
+ 
+
+
+
+#inputlastname,#inputdepartment, #inputphone, #inputdate, #inputtime, #inputlocationtextarea, #incidenttextarea, #avalibletextarea, #inputcomment, #inputsuggestion {
+    width: 100%;
+}
+
+#CountryId,#CityId{
+    width:100%;
+}
+
+
+
+
+
+#fnameerror,#lnameerror, #statuserror, #departmenterror, #phoneerror, #dateerror, #citydropdownlisterror, #countrydropdownlisterror,
+#timeerror {
+    color: red;
+}
+
+
+/*.fa-exclamation-circle {
+    position: absolute;
+    right: 10px;
+    left: 421px;
+    top: 293px;
+}*/
